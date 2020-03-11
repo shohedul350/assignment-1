@@ -17,7 +17,7 @@ module.exports = function customMiddleware(req, res, next) {
   next();
 
   // write file
-  fs.writeFile(`data${Date.now()}.json`, jsondata, (err) => {
+  fs.writeFile(`data/data${Date.now()}.json`, jsondata, (err) => {
     if (err) {
       console.log(err);
     } else {
